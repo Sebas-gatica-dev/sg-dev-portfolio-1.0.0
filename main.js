@@ -4,8 +4,10 @@ import { renderHero } from './components/Hero.js';
 import { renderHero2 } from './components/Hero-2.js';
 import { renderHero3 } from './components/Hero-3.js';
 import { renderFooter } from './components/Footer.js';
-import { renderProducts } from './components/Products/Products.js';
+import { renderTallStack } from './components/Knowledge/renderTallStack.js';
 import { renderContact } from './components/Contact/Contact.js';
+import { renderJsStack } from './components/Knowledge/renderJsStack.js';
+import { renderJavaStack } from './components/Knowledge/renderJavaStack.js';
 
 window.Alpine = Alpine;
 Alpine.start();
@@ -31,7 +33,9 @@ function router() {
       app.innerHTML = `
         <section class="overflow-hidden relative h-auto bg-black">
           ${renderHeader()}
-          ${renderProducts()} 
+          ${renderTallStack()} 
+          ${renderJsStack()}
+          ${renderJavaStack()}
           ${renderFooter()}
         </section>
       `;
@@ -71,15 +75,17 @@ function router() {
       // Página de inicio (Welcome)
       app.innerHTML = `
         <section class="overflow-hidden relative h-auto bg-black">
+         
+
           <div class="lg:p-8 xl:max-w-7xl mx-auto">
             <div data-aos="fade-left" data-aos-duration="1000" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);" class="rounded-2xl lg:rounded-[3rem] overflow-hidden relative">
               ${renderHeader()}
               ${renderHero()}
             </div>
-            <div  class="mt-10 rounded-2xl lg:rounded-[3rem] overflow-hidden relative" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);">
+            <div  class="contenedor derecha mt-10 rounded-2xl lg:rounded-[3rem] overflow-hidden relative" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);">
               ${renderHero2()}
             </div>
-            <div class="mt-10 rounded-2xl lg:rounded-[3rem] overflow-hidden relative" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);">
+            <div class="contenedor izquierda mt-10 rounded-2xl lg:rounded-[3rem] overflow-hidden relative" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);">
               ${renderHero3()}
             </div>
           </div>

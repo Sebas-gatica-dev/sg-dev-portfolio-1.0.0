@@ -8,11 +8,11 @@ export function renderHero3(){
                        <div 
                            x-data="{
                                text: '',
-                               textArray : [ 'I started following a passion...', 'There is no turning back.', 'Programming that makes a difference, making a better reality.'],
+                               textArray : [ 'I started following a passion...', 'Programming that makes a difference', 'Making a better reality.'],
                                textIndex: 0,
                                charIndex: 0,
                                typeSpeed: 42,
-                               cursorSpeed: 950,
+                               cursorSpeed: 900,
                                pauseEnd: 1000,
                                pauseStart: 20,
                                direction: 'forward',

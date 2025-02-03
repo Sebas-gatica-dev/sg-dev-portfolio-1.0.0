@@ -8,10 +8,64 @@
     <link rel="stylesheet" href="/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  </head>
+    <link rel="stylesheet" href="path/to/atropos.css" /> 
+</head>
   <body>
     <div id="app" class=""></div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/atropos@1.0.2/atropos.min.js"></script>
     <script type="module" src="/main.js"></script>
+    <script>
+
+function confettiApp() {
+            return {
+                launchConfetti() {
+                    const confettiCount = 100;
+                    const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+
+                    for (let i = 0; i < confettiCount; i++) {
+                        const confetti = document.createElement('div');
+                        confetti.className = 'confetti';
+                        
+                        const color = colors[Math.floor(Math.random() * colors.length)];
+                        confetti.style.backgroundColor = color;
+                        
+                        confetti.style.left = Math.random() * 100 + 'vw';
+                        confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                        confetti.style.animationDelay = Math.random() * 5 + 's';
+                        confetti.style.animationTimingFunction = 'linear';
+                        confetti.style.animationIterationCount = 1;
+                        confetti.style.animationName = 'confetti-fall';
+
+                        document.body.appendChild(confetti);
+
+                        setTimeout(() => {
+                            confetti.remove();
+                        }, 5000);
+                    }
+                }
+            }
+        }
+
+      function checkScroll() {
+          const contenedores = document.querySelectorAll('.contenedor');
+          
+          contenedores.forEach(contenedor => {
+              const contenedorTop = contenedor.getBoundingClientRect().top;
+              const windowHeight = window.innerHeight;
+              
+              if (contenedorTop < windowHeight * 0.75) {
+                  contenedor.classList.add('visible');
+              }
+          });
+      }
+
+
+
+
+      window.addEventListener('scroll', checkScroll);
+      window.addEventListener('load', checkScroll);
+  </script>
+
   </body>
 </html>
