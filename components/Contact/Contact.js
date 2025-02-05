@@ -1,6 +1,6 @@
 export function renderContact() {
   return `
-  <div class="mt-6 p-8 bg-gradient-to-b from-black to-gray-800 min-h-1/2 flex flex-col items-center  text-white">
+  <div class="mt-20 p-8 bg-gradient-to-b from-black to-gray-800 min-h-1/2 flex flex-col items-center  text-white">
     <h1 class="mb-6 text-white text-4xl font-extrabold md:text-5xl lg:text-6xl underline underline-offset-3 decoration-8 decoration-indigo-700 ">Contact me!</h1>
 
     <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
