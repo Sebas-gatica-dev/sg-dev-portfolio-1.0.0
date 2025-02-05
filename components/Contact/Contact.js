@@ -5,7 +5,7 @@ export function renderContact() {
 
     <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
 
-      <div class=" m-2 border-4s border-gray-800 rounded-full rounded-full overflow-hidden w-48 h-48 shadow-lg">
+      <div class=" m-2 border-4s border-gray-800 rounded-full rounded-full overflow-hidden w-64 h-48 shadow-lg">
         <img src="https://res.cloudinary.com/db4xypidq/image/upload/v1738770786/foto-avatar-yo_x8p3n9.jpg" alt="Tu foto" class="w-full h-full rounded-full object-cover">
       </div>
 
