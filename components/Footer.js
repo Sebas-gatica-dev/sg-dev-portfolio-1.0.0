@@ -25,7 +25,7 @@ export function renderFooter(){
         <div class="flex flex-col justify-between text-center md:flex-row">
             <p class="order-last text-sm leading-tight text-gray-500 md:order-first"> Built by Sebastián Gatica Developer. </p>
             <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm">
-            <li> <a href="#/" class="px-4 text-gray-500 hover:text-white">Inicio</a> </li>
+            <li> <a href="#/" class="px-4 text-gray-500 hover:text-white">Home</a> </li>
             <!-- <li> <a href="#/projects" class="px-4 text-gray-500 hover:text-white">Projects</a> </li> -->
                 <li> <a href="#/components" class="px-4 text-gray-500 hover:text-white">Features</a> </li>
                 <li> <a href="#/contact" class="px-4 text-gray-500 hover:text-white">Contact</a> </li>

@@ -2,7 +2,7 @@ export function renderHero3() {
     return `
        <div class="bg-black border border-collapse border-black relative items-center h-[30rem] w-full bg-cover bg-center bg-no-repeat" style="background-image: url('/computer-img-1.jpg');">
            <div class="relative z-10 flex items-center  w-full h-full px-5 mx-auto lg:px-24">
-               <div class="text-center lg:text-left max-w-full">
+               <div class="absolute top-10 left-0  md:relative text-start lg:text-left max-w-full">
                    <p class="text-white font-light text-xs md:text-lg lg:text-xl tracking-tight leading-7 opacity-90">
                        <!-- Texto animado -->
                        <div 
@@ -70,7 +70,7 @@ export function renderHero3() {
                                         </span>
                                         <p class="inline-block text-xs md:text-lg lg:text-2xl sm:text-sm text-white leading-tight pl-2" x-text="text"></p>
                                         <!-- Cursor -->
-                                        <span class="inline-block w-2 -mr-2 bg-white h-6 hidden" x-ref="cursor"></span>
+                                        <span class="inline-block w-1 md:w-2 -mr-2 bg-white h-3 lg:h-6 hidden" x-ref="cursor"></span>
                                     </div>
                                </span>
                            </div>
