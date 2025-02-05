@@ -9,13 +9,14 @@ export function renderHeader() {
             </button>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="items-center flex-col flex-grow hidden pl-8 md:flex md:flex-row md:justify-end md:pb-0">
-            <a href="#/projects" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300 lg:ml-auto">Projects</a>
+                    <!-- <a href="#/projects" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300 lg:ml-auto">Projects</a> -->
+
+            <a href="#/" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300 lg:ml-auto">Inicio</a>
             <a href="#/components" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Features</a>
             <a href="#/contact" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Contact</a>
-            <div class="items-center inline-flex gap-2 lg:ml-auto md:mt-0 mt-5 list-none">
-                <a href="#/products" class="text-white text-sm py-2 hover:text-white/70 block ease-out duration-300 focus:outline-none focus:shadow-outline md:mt-0 mt-2 px-4">Products</a>
-                <a href="#/getstarted" class="items-center text-sm font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-4 py-1.5 rounded-full text-center hover:text-white w-full">Get Started</a>
-            </div>
+         <!--   <div class="items-center inline-flex gap-2 lg:ml-auto md:mt-0 mt-5 list-none">
+                <a href="#/" class="items-center text-sm font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-4 py-1.5 rounded-full text-center hover:text-white w-full">Get Started</a>
+            </div> -->
         </nav>
     </div>`;
 }
