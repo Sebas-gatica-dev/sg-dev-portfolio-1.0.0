@@ -1,6 +1,6 @@
 export function renderHeader() {
     return `
-    <div class="mx-auto relative w-full lg:px-24 flex flex-col md:flex-row md:items-center md:justify-between md:px-6 px-8 py-3" x-data="{ open: false }">
+    <div class="mx-auto z-auto relative w-full lg:px-24 flex flex-col md:flex-row md:items-center md:justify-between md:px-6 px-8 py-3" x-data="{ open: false }">
         <div class="text-white text-sm items-center flex flex-row justify-between lg:justify-start">
             <a href="#/" class="lg:pr-8 text-lg font-semibold">Sg.dev</a>
             <button @click="open = !open" class="text-white focus:outline-none inline-flex items-center justify-center md:hidden p-2 translate-x-4">
@@ -9,9 +9,9 @@ export function renderHeader() {
             </button>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="items-center flex-col flex-grow hidden pl-8 md:flex md:flex-row md:justify-end md:pb-0">
-            <a href="#/projects" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300 lg:ml-auto">Projects</a>
-            <a href="#/components" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Components</a>
-            <a href="#/contact" class="text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Contact</a>
+            <a href="#/projects" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300 lg:ml-auto">Projects</a>
+            <a href="#/components" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Features</a>
+            <a href="#/contact" class="cursor-pointer text-white text-sm py-2 hover:text-white/70 lg:px-4 md:px-3 px-2 ease-out duration-300">Contact</a>
             <div class="items-center inline-flex gap-2 lg:ml-auto md:mt-0 mt-5 list-none">
                 <a href="#/products" class="text-white text-sm py-2 hover:text-white/70 block ease-out duration-300 focus:outline-none focus:shadow-outline md:mt-0 mt-2 px-4">Products</a>
                 <a href="#/getstarted" class="items-center text-sm font-medium justify-center focus:outline-none text-black inline-flex bg-white border-2 border-white duration-200 focus-visible:outline-white focus-visible:ring-white hover:bg-transparent hover:border-white lg:w-auto px-4 py-1.5 rounded-full text-center hover:text-white w-full">Get Started</a>

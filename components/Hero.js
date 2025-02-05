@@ -7,10 +7,10 @@ export function renderHero() {
                 <p class="text-white font-light lg:text-xl tracking-tight lg:leading-7 opacity-90 max-w-xl sm:mx-auto lg:mx-0 mt-4 text-lg">  <div 
     x-data="{
         text: '',
-        textArray : [ 'Welcome to mi Portfolio.', 'Here you can find my components collection', 'Templates, and all my projects.'],
+        textArray : [ 'Welcome to mi Portfolio.', 'Here you can know more about my habilities.', 'My experience and my projects.'],
         textIndex: 0,
         charIndex: 0,
-        typeSpeed: 42,
+        typeSpeed: 52,
         cursorSpeed: 950,
         pauseEnd: 1000,
         pauseStart: 20,
@@ -69,11 +69,14 @@ export function renderHero() {
         }, $data.cursorSpeed);
 
     })"
-    class="flex items-center justify-center mx-auto text-center max-w-7xl">
-    <div class="relative flex items-center justify-center h-auto">
+    class="relative flex items-center justify-center mx-auto text-center max-w-7xl">
+    <div class="absolute left-0 top-4">
+       <div class="relative flex items-center justify-center h-auto">
         <p class="text-2xl text-white  leading-tight" x-text="text"></p>
         <span class="absolute right-0 w-2 -mr-2 bg-white h-3/4" x-ref="cursor"></span>
+        </div>
     </div>
+ 
 </div>
 
 </p>
