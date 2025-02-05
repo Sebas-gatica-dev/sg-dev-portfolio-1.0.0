@@ -7,7 +7,7 @@ export function renderHero() {
                 <p class="text-white font-light lg:text-xl tracking-tight lg:leading-7 opacity-90 max-w-xl sm:mx-auto lg:mx-0 mt-4 text-lg">  <div 
     x-data="{
         text: '',
-        textArray : [ 'Welcome to mi Portfolio.', 'Here you can know more about my habilities.', 'My experience and my projects.'],
+        textArray : [ 'Welcome to mi Portfolio.', 'You can know more about my habilities.', 'My experience and my projects.'],
         textIndex: 0,
         charIndex: 0,
         typeSpeed: 52,
@@ -72,7 +72,7 @@ export function renderHero() {
     class="relative flex items-center justify-center mx-auto text-center max-w-7xl">
     <div class="absolute left-0 top-4">
        <div class="relative flex items-center justify-center h-auto">
-        <p class="text-2xl text-white  leading-tight" x-text="text"></p>
+        <p class=" text-xs md:text-lg lg:text-2xl text-white  leading-tight" x-text="text"></p>
         <span class="absolute right-0 w-2 -mr-2 bg-white h-3/4" x-ref="cursor"></span>
         </div>
     </div>

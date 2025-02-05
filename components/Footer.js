@@ -9,20 +9,15 @@ export function renderFooter(){
 
             <div class="flex flex-row justify-center mb-4 -ml-4 -mr-4"> 
             
-            <a href="#" class="p-4 rounded-full h-4 w-4"> <img  src="https://www.svgrepo.com/show/439171/github.svg" /> </a>
+            <a href="https://github.com/Sebas-gatica-dev" target="_blank" class="p-4 text-gray-700 hover:text-gray-400 h-4 w-4"> 
+                <i class="fa-brands fa-github"></i>
+            </a>
                     
-            <a href="#" class="p-4 text-gray-700 hover:text-gray-400"> <svg class="fill-current" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle cx="12.145" cy="3.892" r="1"></circle>
-                            <path d="M8 12c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z"></path>
-                            <path d="M12 16H4c-2.056 0-4-1.944-4-4V4c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zM4 2c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2V4c0-.935-1.065-2-2-2H4z"></path>
-                        </g>
-                    </svg> 
-                    
+            <a href="https://www.linkedin.com/in/sebastian-gatica-dev/" target="_blank" class="p-4 text-gray-700 hover:text-gray-400"> 
+                <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <i class="fa-brands fa-x-twitter"></i>
-            
+        
             
             
             </div>

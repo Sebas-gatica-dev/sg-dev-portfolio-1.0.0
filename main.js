@@ -80,7 +80,8 @@ function router() {
       app.innerHTML = `
         <section class="overflow-hidden relative h-auto bg-black">
           <div class="lg:p-8 xl:max-w-7xl mx-auto">
-            <div data-aos="fade-left" data-aos-duration="1000" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);" class="rounded-2xl lg:rounded-[3rem] overflow-hidden relative">
+            <div data-aos="fade-left" data-aos-duration="1000" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);" 
+            class="rounded-2xl mx-6 lg:rounded-[3rem] overflow-hidden relative">
               ${renderHero()}
             </div>
             <div class="contenedor derecha mt-10 rounded-2xl lg:rounded-[3rem] overflow-hidden relative" style="background-image: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);">
